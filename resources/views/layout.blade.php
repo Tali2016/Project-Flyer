@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    {{--<link rel="stylesheet" href="/css/app.css">--}}
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
+@inject('countries','App\Http\Utilities\Country')
+
+{{csrf_field()}}
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">

@@ -15,10 +15,10 @@
 
 <div class="form-group">
     <label for="country">Country</label>
-    <select id="country" name="country" class="form-control"></select>
-    @foreach(App\Http\Utilities\Country::all() as $country)
+    <select id="country" name="country" class="form-control">
+    @foreach(App\Http\Utilities\Country::all() as $country=>$code)
         <option value="{{$country}}">
-            {{$country}}
+            {{$code}}
         </option>
         @endforeach
         </select>
